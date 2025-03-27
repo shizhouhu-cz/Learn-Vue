@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div id="app">{{message}}</div>
+    <script>
+      const { createApp, ref } = Vue;
+
+      createApp({
+        setup() {
+          const message = ref("hello world");
+          return { message };
+        },
+      }).mount('#app');
+    </script> -->
+    <div id="app">
+      <!-- 这种方式是纯文本 -->
+      <p v-bind:style="{color:color}">{{message}}</p>
+      <p style="color: color">{{message}}</p>
+      <!-- 使用指令可以把文本当成html进行编译 -->
+      <p v-html="message">nihao</p>
+      <input :disabled></input>
+    </div>
+    <script type="module">
+      import {
+        createApp,
+        ref,
+      } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+
+      createApp({
+        setup() {
+          const message = ref(`<a href='www.baidu.com'>百度</a>`);
+          return { message, color: "red", disabled: 0 };
+        },
+      }).mount("#app");
+    </script>
+    <!-- <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+        }
+      }
+    </script>
+    <div id="app">{{message}}</div>
+    <script type="module">
+      import MyComponent from "./MyComponent.js";
+      import { createApp } from "vue";
+
+      createApp(MyComponent).mount("#app");
+    </script> -->
+  </body>
+</html>
