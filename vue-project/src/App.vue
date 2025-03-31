@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import FormExample from './components/FormExample.vue';
+import Counter from './components/Counter.vue';
+import TestRef from './components/TestRef.vue';
 
 </script>
 
@@ -16,9 +17,10 @@ import FormExample from './components/FormExample.vue';
     <TheWelcome />
   </main> -->
 
-  <!-- <Counter></Counter> -->
+  <Counter></Counter>
+   <TestRef></TestRef>
   <!-- <ConditionRender></ConditionRender> -->
-  <FormExample></FormExample>
+  <!-- <FormExample></FormExample> -->
 </template>
 
 <style scoped>
