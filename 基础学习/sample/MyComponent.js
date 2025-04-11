@@ -1,11 +1,14 @@
-import { ref } from "vue";
+import { ref } from 'vue'
 
 export default {
   setup() {
-    const message = ref(`<a href='www.baidu.com'>百度</a>`);
-    return {
-      message,
-    };
+    const count = ref(0)
+    return { count }
   },
-  template: `<p>{{message}}</p><p v-html="message"></p>`,
-};
+  template: `
+    <button @click="count++">
+      You clicked me {{ count }} times.
+    </button>`
+  // 也可以针对一个 DOM 内联模板：
+  // template: '#my-template-element'
+}

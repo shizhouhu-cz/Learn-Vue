@@ -1,6 +1,10 @@
 <script setup lang="ts">
+import CalculateProps from './components/CalculateProps.vue';
 import Counter from './components/Counter.vue';
+import ReactiveSystem from './components/ReactiveSystem.vue';
+import TemplateRef from './components/TemplateRef.vue';
 import TestRef from './components/TestRef.vue';
+import Watch from './components/Watch.vue';
 
 </script>
 
@@ -17,10 +21,13 @@ import TestRef from './components/TestRef.vue';
     <TheWelcome />
   </main> -->
 
-  <Counter></Counter>
-   <TestRef></TestRef>
+  <!-- <Counter></Counter>
+   <TestRef></TestRef> -->
   <!-- <ConditionRender></ConditionRender> -->
   <!-- <FormExample></FormExample> -->
+   <!-- <CalculateProps></CalculateProps> -->
+    <!-- <Watch></Watch> -->
+     <TemplateRef></TemplateRef>
 </template>
 
 <style scoped>
