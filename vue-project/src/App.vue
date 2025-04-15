@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import CalculateProps from './components/CalculateProps.vue';
-import Counter from './components/Counter.vue';
-import ReactiveSystem from './components/ReactiveSystem.vue';
-import TemplateRef from './components/TemplateRef.vue';
-import TestRef from './components/TestRef.vue';
-import Watch from './components/Watch.vue';
-
+import Blob from './components/Blobpost/Blob.vue'
+import CalculateProps from './components/CalculateProps.vue'
+import Parent from './components/ComponentModel/Parent.vue'
+import Counter from './components/Counter.vue'
+import ReactiveSystem from './components/ReactiveSystem.vue'
+import Message from './components/Slot/Message.vue'
+import TemplateRef from './components/TemplateRef.vue'
+import TestRef from './components/TestRef.vue'
+import Watch from './components/Watch.vue'
 </script>
 
 <template>
@@ -25,9 +27,12 @@ import Watch from './components/Watch.vue';
    <TestRef></TestRef> -->
   <!-- <ConditionRender></ConditionRender> -->
   <!-- <FormExample></FormExample> -->
-   <!-- <CalculateProps></CalculateProps> -->
-    <!-- <Watch></Watch> -->
-     <TemplateRef></TemplateRef>
+  <!-- <CalculateProps></CalculateProps> -->
+  <!-- <Watch></Watch> -->
+  <!-- <TemplateRef></TemplateRef> -->
+  <Blob></Blob>
+  <!-- <Parent></Parent> -->
+  <!-- <Message></Message> -->
 </template>
 
 <style scoped>
@@ -59,8 +64,6 @@ header {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
-
-
   }
 }
 </style>
