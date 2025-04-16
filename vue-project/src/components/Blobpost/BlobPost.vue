@@ -22,10 +22,10 @@ watchEffect(
     },
   },
 )
-// const emit = defineEmits(['reset'])
-// function reset() {
-//   emit('reset')
-// }
+const emit = defineEmits(['reset','enlarge-text'])
+function reset() {
+  emit('reset')
+}
 </script>
 
 <template>

@@ -11,6 +11,10 @@ const blobs = ref([
 ])
 
 const fontSize = ref(1);
+
+if(fontSize.value > 1.2){
+    console.log('哈哈哈')
+}
 </script>
 
 <template>
