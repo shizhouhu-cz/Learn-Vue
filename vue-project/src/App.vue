@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import Blob from './components/Blobpost/Blob.vue'
+import WebSite from './components/Blobpost/WebSite.vue'
 import CalculateProps from './components/CalculateProps.vue'
 import Parent from './components/ComponentModel/Parent.vue'
 import Counter from './components/Counter.vue'
+import ParentListener from './components/Event/ParentListener.vue'
+import ParentBox from './components/Props/ParentBox.vue'
 import ReactiveSystem from './components/ReactiveSystem.vue'
 import Message from './components/Slot/Message.vue'
 import TemplateRef from './components/TemplateRef.vue'
@@ -30,9 +33,12 @@ import Watch from './components/Watch.vue'
   <!-- <CalculateProps></CalculateProps> -->
   <!-- <Watch></Watch> -->
   <!-- <TemplateRef></TemplateRef> -->
-  <Blob></Blob>
+  <!-- <Blob></Blob> -->
   <!-- <Parent></Parent> -->
   <!-- <Message></Message> -->
+  <!-- <WebSite></WebSite> -->
+  <ParentBox></ParentBox>
+   <ParentListener></ParentListener>
 </template>
 
 <style scoped>
