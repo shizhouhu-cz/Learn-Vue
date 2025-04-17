@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ParentAttrs from './components/Attributes/ParentAttrs.vue'
 import Blob from './components/Blobpost/Blob.vue'
 import WebSite from './components/Blobpost/WebSite.vue'
 import CalculateProps from './components/CalculateProps.vue'
@@ -35,10 +36,11 @@ import Watch from './components/Watch.vue'
   <!-- <TemplateRef></TemplateRef> -->
   <!-- <Blob></Blob> -->
   <!-- <Parent></Parent> -->
-  <!-- <Message></Message> -->
+  <Message></Message>
   <!-- <WebSite></WebSite> -->
-  <ParentBox></ParentBox>
-   <ParentListener></ParentListener>
+  <!-- <ParentBox></ParentBox> -->
+  <!-- <ParentListener></ParentListener> -->
+  <!-- <ParentAttrs></ParentAttrs> -->
 </template>
 
 <style scoped>

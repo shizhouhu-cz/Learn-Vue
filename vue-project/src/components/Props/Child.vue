@@ -37,6 +37,6 @@ watch(
 <template>
   <div>
     <p>Name:{{ name }}</p>
-    <p>Age:{{ age }}</p>
+    <p>Age:{{ $props.age }}</p>
   </div>
 </template>
