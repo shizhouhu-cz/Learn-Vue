@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+        }
+      }
+    </script>
+    <div id="app">
+      <div @click="increase" style="background-color: lightblue">{{count}}</div>
+      <div @click="increase2" style="background-color: lightgreen">{{countProxy.count}}</div>
+    </div>
+    <script type="module">
+      import { ref, createApp, reactive } from "vue";
+
+      createApp({
+        setup() {
+          const count = ref(0);
+          const countProxy = reactive({ count: 0 });
+
+          function increase() {
+            count.value++;
+          }
+
+          function increase2() {
+            countProxy.count++;
+          }
+
+          return {
+            count,
+            increase,
+            countProxy,
+            increase2,
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
