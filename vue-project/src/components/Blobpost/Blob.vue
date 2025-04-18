@@ -18,6 +18,7 @@ if(fontSize.value > 1.2){
 </script>
 
 <template>
+    <slot></slot>
     <div :style="{ fontSize: fontSize + 'rem', color: 'red' }">
         <BlobPost v-for="blob in blobs" :key="blob.id" :title="blob.title" :age="blob.age"
             :greeting-message='blob.greetingMessage' @enlarge-text="(n,m) => fontSize += 0.1 * n *m" @reset="fontSize = 1">
