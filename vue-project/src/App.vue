@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import AsyncParent from './components/AsyncComponent/AsyncParent.vue'
 import ParentAttrs from './components/Attributes/ParentAttrs.vue'
 import Blob from './components/Blobpost/Blob.vue'
 import WebSite from './components/Blobpost/WebSite.vue'
@@ -8,14 +9,17 @@ import Counter from './components/Counter.vue'
 import ParentListener from './components/Event/ParentListener.vue'
 import ParentBox from './components/Props/ParentBox.vue'
 import ReactiveSystem from './components/ReactiveSystem.vue'
+import SimulateParentModel from './components/SimulateModel/SimulateParentModel.vue'
 import Message from './components/Slot/Message.vue'
+import Main from './components/Tabs/Main.vue'
 import TemplateRef from './components/TemplateRef.vue'
 import TestRef from './components/TestRef.vue'
 import Watch from './components/Watch.vue'
 </script>
 
 <template>
-  <!-- <header>
+  <div>
+    <!-- <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
@@ -27,20 +31,24 @@ import Watch from './components/Watch.vue'
     <TheWelcome />
   </main> -->
 
-  <!-- <Counter></Counter>
+    <!-- <Counter></Counter>
    <TestRef></TestRef> -->
-  <!-- <ConditionRender></ConditionRender> -->
-  <!-- <FormExample></FormExample> -->
-  <!-- <CalculateProps></CalculateProps> -->
-  <!-- <Watch></Watch> -->
-  <!-- <TemplateRef></TemplateRef> -->
-  <!-- <Blob></Blob> -->
-  <!-- <Parent></Parent> -->
-  <Message></Message>
-  <!-- <WebSite></WebSite> -->
-  <!-- <ParentBox></ParentBox> -->
-  <!-- <ParentListener></ParentListener> -->
-  <!-- <ParentAttrs></ParentAttrs> -->
+    <!-- <ConditionRender></ConditionRender> -->
+    <!-- <FormExample></FormExample> -->
+    <!-- <CalculateProps></CalculateProps> -->
+    <!-- <Watch></Watch> -->
+    <!-- <TemplateRef></TemplateRef> -->
+    <!-- <Blob></Blob> -->
+    <!-- <Parent></Parent> -->
+    <!-- <Message></Message> -->
+    <!-- <WebSite></WebSite> -->
+    <!-- <ParentBox></ParentBox> -->
+    <!-- <ParentListener></ParentListener> -->
+    <!-- <ParentAttrs></ParentAttrs> -->
+    <!-- <SimulateParentModel></SimulateParentModel> -->
+    <!-- <Main></Main> -->
+    <AsyncParent></AsyncParent>
+  </div>
 </template>
 
 <style scoped>

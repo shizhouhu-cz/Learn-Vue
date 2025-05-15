@@ -8,9 +8,8 @@ const tit = ref('哈哈哈')
 
 <template>
   <div>
-    <span style="{color:'red'}">Parent model value is {{ modelref }}</span>
+    <div :style="{ color: 'red' }">model value: {{ modelref }};model title:{{ tit }}</div>
     <button @click="modelref++">modify model initialvalue</button>
-    <span>{{tit}}</span>
-    <ChildModel v-model="modelref" v-model:model-title="tit"></ChildModel>
+    <ChildModel v-model="modelref" v-model:model-title.upper="tit"></ChildModel>
   </div>
 </template>
