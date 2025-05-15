@@ -6,6 +6,8 @@ import CalculateProps from './components/CalculateProps.vue'
 import Parent from './components/ComponentModel/Parent.vue'
 import Counter from './components/Counter.vue'
 import ParentListener from './components/Event/ParentListener.vue'
+import UseCount1 from './components/PiniaTest/UseCount1.vue'
+import UseCount2 from './components/PiniaTest/useCount2.vue'
 import ParentBox from './components/Props/ParentBox.vue'
 import ReactiveSystem from './components/ReactiveSystem.vue'
 import Message from './components/Slot/Message.vue'
@@ -27,8 +29,8 @@ import Watch from './components/Watch.vue'
     <TheWelcome />
   </main> -->
 
-  <!-- <Counter></Counter>
-   <TestRef></TestRef> -->
+  <!-- <Counter></Counter> -->
+  <!-- <TestRef></TestRef> -->
   <!-- <ConditionRender></ConditionRender> -->
   <!-- <FormExample></FormExample> -->
   <!-- <CalculateProps></CalculateProps> -->
@@ -36,11 +38,13 @@ import Watch from './components/Watch.vue'
   <!-- <TemplateRef></TemplateRef> -->
   <!-- <Blob></Blob> -->
   <!-- <Parent></Parent> -->
-  <Message></Message>
+  <!-- <Message></Message> -->
   <!-- <WebSite></WebSite> -->
   <!-- <ParentBox></ParentBox> -->
   <!-- <ParentListener></ParentListener> -->
   <!-- <ParentAttrs></ParentAttrs> -->
+  <UseCount1></UseCount1>
+  <UseCount2></UseCount2>
 </template>
 
 <style scoped>
